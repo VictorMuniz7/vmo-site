@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark" data-beasties-container="">
+  <head>
+    <meta charset="utf-8">
+    <title>VMO - Sistemas — Landing pages e sistemas sob medida em 7 dias</title>
+    <base href="/vmo-site/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#061417">
+
+    <link rel="icon" type="image/svg+xml" href="brand/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="brand/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="brand/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <!--
+      Tema antes da primeira pintura.
+
+      Este script precisa ser síncrono e ficar aqui, no <head>: se a escolha do
+      tema esperasse o Angular hidratar, quem prefere o claro veria o site
+      escuro piscar antes. O hash SHA-256 dele é calculado no passo de build
+      (scripts/aplicar-csp.mjs) e entra na CSP — nada de `unsafe-inline`.
+    -->
+    <script>
+      (function () {
+        try {
+          var salvo = localStorage.getItem('vmo-tema');
+          var tema =
+            salvo === 'light' || salvo === 'dark'
+              ? salvo
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light';
+          document.documentElement.setAttribute('data-theme', tema);
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', tema === 'dark' ? '#061417' : '#f4fafb');
+        } catch (e) {
+          /* armazenamento bloqueado: segue no tema escuro do atributo */
+        }
+      })();
+    </script>
+  <style>@layer properties;@font-face{font-family:Space Grotesk Variable;font-style:normal;font-display:swap;font-weight:300 700;src:url("./media/space-grotesk-vietnamese-wght-normal-UOJE75FD.woff2") format("woff2-variations");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Space Grotesk Variable;font-style:normal;font-display:swap;font-weight:300 700;src:url("./media/space-grotesk-latin-ext-wght-normal-KWQTIOU2.woff2") format("woff2-variations");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Space Grotesk Variable;font-style:normal;font-display:swap;font-weight:300 700;src:url("./media/space-grotesk-latin-wght-normal-LIGEH75C.woff2") format("woff2-variations");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter Variable;font-style:normal;font-display:swap;font-weight:100 900;src:url("./media/inter-cyrillic-ext-wght-normal-IYF56FF6.woff2") format("woff2-variations");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Inter Variable;font-style:normal;font-display:swap;font-weight:100 900;src:url("./media/inter-cyrillic-wght-normal-JEOLYBOO.woff2") format("woff2-variations");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Inter Variable;font-style:normal;font-display:swap;font-weight:100 900;src:url("./media/inter-greek-ext-wght-normal-EOVOK2B5.woff2") format("woff2-variations");unicode-range:U+1F00-1FFF}@font-face{font-family:Inter Variable;font-style:normal;font-display:swap;font-weight:100 900;src:url("./media/inter-greek-wght-normal-IRE366VL.woff2") format("woff2-variations");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Inter Variable;font-style:normal;font-display:swap;font-weight:100 900;src:url("./media/inter-vietnamese-wght-normal-CE5GGD3W.woff2") format("woff2-variations");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Inter Variable;font-style:normal;font-display:swap;font-weight:100 900;src:url("./media/inter-latin-ext-wght-normal-HA22NDSG.woff2") format("woff2-variations");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter Variable;font-style:normal;font-display:swap;font-weight:100 900;src:url("./media/inter-latin-wght-normal-NRMW37G5.woff2") format("woff2-variations");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@layer theme,base,components,utilities;@layer theme{:root{--font-sans:"Inter Variable", "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;--font-mono:ui-monospace, "SFMono-Regular", "Cascadia Code", monospace;--default-transition-duration:.15s;--default-transition-timing-function:cubic-bezier(.4, 0, .2, 1);--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono);--font-display:"Space Grotesk Variable", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;--radius-card:1.25rem;--radius-pill:999px;--ease-out-expo:cubic-bezier(.16, 1, .3, 1);--ease-spring:cubic-bezier(.34, 1.56, .64, 1)}}@layer base{*,:after,:before{box-sizing:border-box;margin:0;padding:0;border:0 solid}html{line-height:1.5;-webkit-text-size-adjust:100%;tab-size:4;font-family:var(--default-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings, normal);font-variation-settings:var(--default-font-variation-settings, normal);-webkit-tap-highlight-color:transparent}strong{font-weight:bolder}}@layer utilities{}@layer components{}@supports (animation-timeline: view()){@media(prefers-reduced-motion:no-preference){}}:root{color-scheme:light;--c-bg:#f4fafb;--c-bg-deep:#e7f2f4;--c-surface:#ffffff;--c-surface-2:#eef7f8;--c-surface-3:#dceef0;--c-ink:#0d2b30;--c-ink-soft:#1d454c;--c-muted:#44666c;--c-brand:#0f7a85;--c-brand-strong:#0b5f68;--c-brand-vivid:#1396a3;--c-accent:#0e8f99;--c-accent-vivid:#35d0d3;--c-line:#c9e2e5;--c-line-strong:#a8d2d6;--c-on-brand:#ffffff;--glow-1:rgba(19, 150, 163, .16);--glow-2:rgba(53, 208, 211, .14);--grid-line:rgba(13, 43, 48, .055);--card-shadow:0 1px 2px rgba(13, 43, 48, .05), 0 12px 32px -12px rgba(13, 43, 48, .14);--card-shadow-hover:0 2px 4px rgba(13, 43, 48, .07), 0 28px 60px -20px rgba(15, 122, 133, .33);--ring:rgba(15, 122, 133, .45)}@layer base{*,*:before,*:after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:5.5rem;-webkit-text-size-adjust:100%}body{margin:0;background-color:var(--c-bg);color:var(--c-ink);font-family:var(--font-sans);font-size:1rem;line-height:1.65;font-synthesis-weight:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background-color .45s var(--ease-out-expo),color .45s var(--ease-out-expo)}p{text-wrap:pretty;margin:0}*{scrollbar-color:var(--c-line-strong) transparent;scrollbar-width:thin}}@layer components{}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}@property --tw-rotate-x{syntax:"*";inherits:false;}@property --tw-rotate-y{syntax:"*";inherits:false;}@property --tw-rotate-z{syntax:"*";inherits:false;}@property --tw-skew-x{syntax:"*";inherits:false;}@property --tw-skew-y{syntax:"*";inherits:false;}@property --tw-border-style{syntax:"*";inherits:false;initial-value:solid;}@property --tw-blur{syntax:"*";inherits:false;}@property --tw-brightness{syntax:"*";inherits:false;}@property --tw-contrast{syntax:"*";inherits:false;}@property --tw-grayscale{syntax:"*";inherits:false;}@property --tw-hue-rotate{syntax:"*";inherits:false;}@property --tw-invert{syntax:"*";inherits:false;}@property --tw-opacity{syntax:"*";inherits:false;}@property --tw-saturate{syntax:"*";inherits:false;}@property --tw-sepia{syntax:"*";inherits:false;}@property --tw-drop-shadow{syntax:"*";inherits:false;}@property --tw-drop-shadow-color{syntax:"*";inherits:false;}@property --tw-drop-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%;}@property --tw-drop-shadow-size{syntax:"*";inherits:false;}@property --tw-backdrop-blur{syntax:"*";inherits:false;}@property --tw-backdrop-brightness{syntax:"*";inherits:false;}@property --tw-backdrop-contrast{syntax:"*";inherits:false;}@property --tw-backdrop-grayscale{syntax:"*";inherits:false;}@property --tw-backdrop-hue-rotate{syntax:"*";inherits:false;}@property --tw-backdrop-invert{syntax:"*";inherits:false;}@property --tw-backdrop-opacity{syntax:"*";inherits:false;}@property --tw-backdrop-saturate{syntax:"*";inherits:false;}@property --tw-backdrop-sepia{syntax:"*";inherits:false;}@layer properties{@supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))){*,:before,:after{--tw-rotate-x:initial;--tw-rotate-y:initial;--tw-rotate-z:initial;--tw-skew-x:initial;--tw-skew-y:initial;--tw-border-style:solid;--tw-blur:initial;--tw-brightness:initial;--tw-contrast:initial;--tw-grayscale:initial;--tw-hue-rotate:initial;--tw-invert:initial;--tw-opacity:initial;--tw-saturate:initial;--tw-sepia:initial;--tw-drop-shadow:initial;--tw-drop-shadow-color:initial;--tw-drop-shadow-alpha:100%;--tw-drop-shadow-size:initial;--tw-backdrop-blur:initial;--tw-backdrop-brightness:initial;--tw-backdrop-contrast:initial;--tw-backdrop-grayscale:initial;--tw-backdrop-hue-rotate:initial;--tw-backdrop-invert:initial;--tw-backdrop-opacity:initial;--tw-backdrop-saturate:initial;--tw-backdrop-sepia:initial}}}</style><link rel="stylesheet" href="styles-7CZNRQAJ.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-7CZNRQAJ.css"></noscript></head>
+
+  <body ngcm="">
+    <app-root></app-root>
+
+    <noscript>
+      <p style="
+          max-width: 46rem;
+          margin: 7rem auto 2rem;
+          padding: 1.25rem;
+          border: 1px solid #1396a3;
+          border-radius: 1rem;
+          font-family: system-ui, sans-serif;
+          line-height: 1.6;
+        ">
+        Este site funciona sem JavaScript — o conteúdo todo já está nesta página. O que o
+        JavaScript acrescenta são as animações, o botão de tema claro/escuro e o formulário que
+        monta a mensagem do WhatsApp. Para falar comigo agora:
+        <strong>(18) 98170-9943</strong> ou <strong>(44) 99822-7263</strong>.
+      </p>
+    </noscript>
+  <link rel="modulepreload" href="chunk-DETM6QBC.js"><link rel="modulepreload" href="chunk-NKBDOYN5.js"><link rel="modulepreload" href="chunk-7CGTOI24.js"><script src="main-3DWVP5OG.js" type="module"></script></body>
+</html>

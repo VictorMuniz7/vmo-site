@@ -1,0 +1,15 @@
+{
+  "name": "VMO - Sistemas",
+  "short_name": "VMO",
+  "description": "Landing pages e sistemas sob medida, com demo em 48h e entrega em 7 dias.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#061417",
+  "theme_color": "#061417",
+  "icons": [
+    { "src": "brand/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "brand/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "brand/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

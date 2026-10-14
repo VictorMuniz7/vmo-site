@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "mimo-kids",
+    "tipo": "desktop",
+    "largura": 2880,
+    "altura": 1800,
+    "gerados": [
+      "mimo-kids-desktop-720",
+      "mimo-kids-desktop-1080",
+      "mimo-kids-desktop-1440"
+    ]
+  },
+  {
+    "slug": "mimo-kids",
+    "tipo": "full",
+    "largura": 2880,
+    "altura": 9086,
+    "gerados": [
+      "mimo-kids-full-720",
+      "mimo-kids-full-1080"
+    ]
+  },
+  {
+    "slug": "mimo-kids",
+    "tipo": "mobile",
+    "largura": 1170,
+    "altura": 2532,
+    "gerados": [
+      "mimo-kids-mobile-330",
+      "mimo-kids-mobile-495"
+    ]
+  },
+  {
+    "slug": "evandro-venturin",
+    "tipo": "desktop",
+    "largura": 2880,
+    "altura": 1800,
+    "gerados": [
+      "evandro-venturin-desktop-720",
+      "evandro-venturin-desktop-1080",
+      "evandro-venturin-desktop-1440"
+    ]
+  },
+  {
+    "slug": "evandro-venturin",
+    "tipo": "full",
+    "largura": 2880,
+    "altura": 8406,
+    "gerados": [
+      "evandro-venturin-full-720",
+      "evandro-venturin-full-1080"
+    ]
+  },
+  {
+    "slug": "evandro-venturin",
+    "tipo": "mobile",
+    "largura": 1170,
+    "altura": 2532,
+    "gerados": [
+      "evandro-venturin-mobile-330",
+      "evandro-venturin-mobile-495"
+    ]
+  },
+  {
+    "slug": "ideal-analises",
+    "tipo": "desktop",
+    "largura": 2880,
+    "altura": 1800,
+    "gerados": [
+      "ideal-analises-desktop-720",
+      "ideal-analises-desktop-1080",
+      "ideal-analises-desktop-1440"
+    ]
+  },
+  {
+    "slug": "ideal-analises",
+    "tipo": "full",
+    "largura": 2880,
+    "altura": 13192,
+    "gerados": [
+      "ideal-analises-full-720",
+      "ideal-analises-full-1080"
+    ]
+  },
+  {
+    "slug": "ideal-analises",
+    "tipo": "mobile",
+    "largura": 1170,
+    "altura": 2532,
+    "gerados": [
+      "ideal-analises-mobile-330",
+      "ideal-analises-mobile-495"
+    ]
+  },
+  {
+    "slug": "licita-vmo",
+    "tipo": "desktop",
+    "largura": 1902,
+    "altura": 951,
+    "gerados": [
+      "licita-vmo-desktop-720",
+      "licita-vmo-desktop-1080",
+      "licita-vmo-desktop-1440"
+    ]
+  },
+  {
+    "slug": "licita-vmo-login",
+    "tipo": "desktop",
+    "largura": 1919,
+    "altura": 950,
+    "gerados": [
+      "licita-vmo-login-desktop-720",
+      "licita-vmo-login-desktop-1080",
+      "licita-vmo-login-desktop-1440"
+    ]
+  },
+  {
+    "slug": "licita-vmo-relatorios",
+    "tipo": "desktop",
+    "largura": 1915,
+    "altura": 943,
+    "gerados": [
+      "licita-vmo-relatorios-desktop-720",
+      "licita-vmo-relatorios-desktop-1080",
+      "licita-vmo-relatorios-desktop-1440"
+    ]
+  }
+]

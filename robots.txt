@@ -1,0 +1,6 @@
+# Enquanto não existe domínio próprio, não há Sitemap declarado aqui.
+# Ao publicar no domínio final, acrescente:
+#   Sitemap: https://SEU-DOMINIO/sitemap.xml
+
+User-agent: *
+Allow: /

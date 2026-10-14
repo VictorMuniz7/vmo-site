@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="104" fill="#0D2B30"/>
+  <g transform="translate(256 262) scale(0.86) translate(-300 -228)">
+    <defs>
+    <clipPath id="inner"><polygon points="300.00,20.00 518.74,178.93 435.19,436.07 164.81,436.07 81.26,178.93"/></clipPath>
+    <clipPath id="outer"><polygon points="300.00,6.40 531.67,174.72 443.18,447.07 156.82,447.07 68.33,174.72"/></clipPath>
+    <clipPath id="base"><rect x="0" y="376.07390870623794" width="600" height="200"/></clipPath>
+    <clipPath id="mcut"><rect x="0" y="0" width="600" height="378"/></clipPath>
+  </defs>
+  <polygon points="300.00,20.00 518.74,178.93 435.19,436.07 164.81,436.07 81.26,178.93" fill="none" stroke="#1396A3" stroke-width="22" stroke-linejoin="miter" stroke-miterlimit="10"/>
+  <g clip-path="url(#outer)">
+    <g clip-path="url(#base)"><polyline points="10.00,-183.93 300.00,436.07 590.00,-183.93" fill="none" stroke="#0D2B30" stroke-width="36" stroke-linejoin="miter" stroke-miterlimit="10"/></g>
+    <g><polyline points="10.00,-183.93 300.00,436.07 590.00,-183.93" fill="none" stroke="#1396A3" stroke-width="22" stroke-linejoin="miter" stroke-miterlimit="10"/></g>
+    <g clip-path="url(#base)"><polyline points="10.00,-183.93 300.00,436.07 590.00,-183.93" fill="none" stroke="#1396A3" stroke-width="22" stroke-linejoin="miter" stroke-miterlimit="10"/></g>
+  </g>
+  <g clip-path="url(#mcut)">
+    <polyline points="154.98,418.00 250.00,165.00 300.00,312.00 350.00,165.00 445.02,418.00" fill="none" stroke="#35D0D3" stroke-width="22" stroke-linejoin="miter" stroke-miterlimit="10"/>
+  </g>
+  
+
+  </g>
+</svg>
